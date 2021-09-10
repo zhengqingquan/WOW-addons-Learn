@@ -17,11 +17,6 @@ GetBindLocation()
 GetSubZoneText()
 ```
 
-创建一个框架元素
-参考：https://warcraft.huijiwiki.com/wiki/API_CreateFrame#
-```lua
-newFrame = CreateFrame("frameType"[, "name"][, parent][, "template"][, id])
-```
 
 小地图按钮
 ```lua
@@ -38,14 +33,7 @@ framerate()
 InterfaceOptions_AddCategory(frame)
 ```
 
-获取所有的插件数量（AddOns目录下合法的插件数量）
-```lua
-GetNumAddOns()
-```
 
-删除与该组件相关的所有锚点。
-通常用来重置按钮的位置。
-参考：https://wowpedia.fandom.com/wiki/API_Region_ClearAllPoints
-```lua
-Region:ClearAllPoints()
-```
+
+该商人能否修理
+CanMerchantRepair
