@@ -229,3 +229,12 @@ XML预定义在lua中表现为表
 
 
 有些插件会再用户插件之前载入（方便用户插件调用），而有些会在用户之后载入（原因未知，例如Blizzard_ChallengesUI）。
+
+
+无论插件的内容是否被使用，都会占用内存。
+
+默认参数只有在插件加载完成之后才会有，也就是在玩家进入游戏加载结束之后
+
+复选按钮一般有三种模板
+-- 一般有三种模板，分别是UICheckButtonTemplate、ChatConfigCheckButtonTemplate和InterfaceOptionsCheckButtonTemplate
+-- UICheckButtonTemplate的字体是黄色的，ChatConfigCheckButtonTemplate和InterfaceOptionsCheckButtonTemplate的字体是白色的。
