@@ -218,7 +218,7 @@ function sortbygrade (names, grades)
 end
 ```
 在例子中，内部函数table.sort中的匿名函数可以访问sortbygrade的参数grades。在匿名函数内部grades不是全局变量也不是局部变量，我们将它称作“外部的局部变量（external local variable）”或upvalue（upvalue意思有些误导，然而它的存在有Lua的历史根源，还有它比起external local variable更加简短）。
-从技术上来讲，闭包指的是值，而不是值函数。函数仅仅是闭包的一个原型声明；
+从技术上来讲，闭包指的是值，而不是指函数。函数仅仅是闭包的一个原型声明；
 
 ## 非全局函数
 函数既然是值，那当然也可以作为全局变量或局部变量。当我们将函数保存在一个局部变量内时，我们得到一个局部函数，也就是说局部函数函数像局部变量一样在一定范围内有效。
